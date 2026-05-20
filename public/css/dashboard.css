@@ -1,0 +1,113 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  background-color: #1f1f1f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #080505;
+}
+
+.logout {
+  color: #ff6666 !important;
+  font-weight: bold;
+}
+
+/* --- DASHBOARD CONTENT --- */
+.dashboard {
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  padding: 50px 70px;
+}
+
+.dashboard h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* --- DASHBOARD CARDS --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.count {
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* --- BUTTONS --- */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
